@@ -12,8 +12,7 @@
 
 (defn get-path
   []
-  (if-let [j (-> *ns*
-                 class
+  (if-let [j (-> cp_investigator.class_path
                  .getProtectionDomain
                  .getCodeSource
                  .getLocation)]
